@@ -306,6 +306,7 @@
             var $field = $('#{{ id }}');
             var $autocompleter = $('#autocompleter_{{ id }}');
             var $configs = {
+		minLength: 0,
                 focus: function(event, ui) {
                     return false;
                 },
