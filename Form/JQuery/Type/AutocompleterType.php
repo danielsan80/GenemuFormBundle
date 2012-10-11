@@ -53,7 +53,7 @@ class AutocompleterType extends AbstractType
     public function buildView(FormView $view, FormInterface $form)
     {
         $datas = json_decode($form->getClientData(), true);
-        $value = '';
+        $value = $form->getData();
 
         if (false === empty($datas)) {
             if (true === $form->getAttribute('multiple')) {
